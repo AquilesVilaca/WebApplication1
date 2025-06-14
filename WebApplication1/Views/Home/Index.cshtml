@@ -1,0 +1,27 @@
+﻿@using WebApplication1.ViewModel;
+@model DrinkItemViewModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center" id="titulo">
+    <h1 class="display-4">Drinks Populares</h1>
+</div>
+@foreach (var Item in Model.drinksPreparoEImagem)
+{
+    <a href="@Url.Action("Privacy", "Home", new { IdDrink = Item.Id })">
+        <div class="ItemMenuDeDrinks">
+
+            <img src="@Item.UrlImagem" />
+            <h3> @Item.NomeDoDrink</h3>
+            <p class="descricaoPreparo"> @Item.DescricaoPreparo</p>
+            <p></p>
+        </div>
+    </a>
+
+}
+
+
+
+
