@@ -10,10 +10,10 @@ namespace WebApplication1.Models
 
         public int Id { get; set; }
         [StringLength(100)]
-        public string Quantidade { get; set; }
+        public string QuantidadeEIngrediente { get; set; }
         [Required]
 
-        public Ingrediente Ingredientes { get; set; }
+
 
         public DrinkPreparoEImagem DrinkPreparoEImagem { get; set; }
     }

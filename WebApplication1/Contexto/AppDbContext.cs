@@ -9,7 +9,7 @@ namespace WebApplication1.Contexto
         {
         }
 
-        public DbSet<Ingrediente> Ingredientes { get; set; }
+        //public DbSet<Ingrediente> Ingredientes { get; set; }
         public DbSet<ItemDrink> ItensDrink { get; set; }
         public DbSet<DrinkPreparoEImagem> DrinksPreparoEImagem { get; set; }
 

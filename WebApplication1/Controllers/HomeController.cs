@@ -19,18 +19,18 @@ namespace WebApplication1.Controllers
         {
             var drinkItemViewModel = new DrinkItemViewModel();
             drinkItemViewModel.drinksPreparoEImagem = _context.DrinksPreparoEImagem;
-            drinkItemViewModel.ingredientes = _context.Ingredientes;
+            //drinkItemViewModel.ingredientes = _context.Ingredientes;
             drinkItemViewModel.ItensDrink = _context.ItensDrink;
             return View(drinkItemViewModel);
         }
         [HttpGet]
-        public IActionResult Privacy(int IdDrink)
+        public IActionResult Drink(int IdDrink)
         {
             var drinkItemViewModel = new DrinkItemViewModel();
             var drinkBuscado = new DrinkPreparoEImagem();
-            drinkItemViewModel.ItensDrink = _context.ItensDrink.Include(C=> C.Ingredientes).Include(c => c.DrinkPreparoEImagem);
+            drinkItemViewModel.ItensDrink = _context.ItensDrink.Include(c => c.DrinkPreparoEImagem);
             drinkItemViewModel.drinksPreparoEImagem = _context.DrinksPreparoEImagem.Include(c=> c.ItensDrink);
-            drinkItemViewModel.ingredientes = _context.Ingredientes;
+            //drinkItemViewModel.ingredientes = _context.Ingredientes;
             //var drinkBuscado1 = new List<ItemDrink>();
             //drinkBuscado1.AddRange(drinkItemViewModel.ItensDrink.Where(p => p.DrinkPreparoEImagem.Id == IdDrink));
 

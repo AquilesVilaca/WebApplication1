@@ -1,0 +1,45 @@
+﻿@using WebApplication1.ViewModel;
+@model DrinkPreparoEImagem;
+@{
+    ViewData["Title"] = "Drink";
+}
+
+<img src="/Imagens/bar.jpg" class="BannerDrink" />
+
+
+
+
+<div class="MiniaturaDrinkPaginaPrincipal">
+    <img src="@Model.UrlImagem" id="MiniaturaDrinkPaginaPrincipalImagem" />
+    <div class="NomeDrinkPaginaPrincipal">
+        <h1> 
+         
+            @Model.NomeDoDrink
+        </h1>
+        <a href="###">
+            <p>Feito por ####</p>
+        </a>
+    </div>
+
+</div>
+
+<div id="Ingredientes">
+
+    <h4>Ingredientes</h4>
+
+    <ul>
+        @foreach (var Item in Model.ItensDrink)
+        {
+            <li> @Item.QuantidadeEIngrediente</li>
+
+        }
+
+    </ul>
+
+</div>
+<p>
+    @Model.DescricaoPreparo
+</p>
+
+
+

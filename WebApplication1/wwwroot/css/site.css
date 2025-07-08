@@ -1,43 +1,119 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
 }
+/* {
+    background-color: #89a162;
+}*/
 #titulo {
     margin-bottom: 100px;
     margin-top: 50px;
 }
-.ItemMenuDeDrinks{
-    background-color: aqua;
+
+
+/*=============Menu de Drinks=============*/
+
+
+
+.ImagemCarrousel {
+    width: 1116px;
+    height: 300px;
+    margin: 30px;
+}
+
+.BlocoComItensDoMenu {
+    margin-left: 30px;
+    height:fit-content;
+     
+}
+
+.ItemMenuDeDrinks {
+    background-color: #668c54;
     padding: 10px;
     width: 250px;
     height: 400px;
     overflow: hidden;
     border-radius: 10px;
-    float:inline-start; 
+    float: inline-start;
     margin-right: 20px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
+    color: white;
+    /*    text-shadow: 1px 1px 2px black;
+*/
 }
-img {
+
+    .ItemMenuDeDrinks:hover {
+        background-color: #ff9a51;
+        transition: 0.3s;
+    }
+
+
+
+.ImagemItemMenuDeDrinks {
     margin: auto;
     display: block;
     height: 225px;
     width: 225px;
     border-radius: 10px;
 }
-.descricaoPreparo{
+
+
+
+.descricaoPreparo {
     text-align: justify;
+}
+
+/*=============Pagina Principal dos Drinks=============*/
+
+
+.MiniaturaDrinkPaginaPrincipal {
+    margin-left: 20px;
+    display: block;
+    position: relative;
+    margin-top: -50px;
+   
+}
+
+.NomeDrinkPaginaPrincipal {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 20px
+}
+
+
+#MiniaturaDrinkPaginaPrincipalImagem {
+    margin-left: 30px;
+    display: block;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    display: inline;
+    margin-top: -80px;
+}
+
+.BannerDrink {
+    width: 100%;
+}
+
+#Ingredientes{
+    margin: 50px;
+}
+footer{
+    display:block;
+    clear: both;
+    margin-top: 50px;
 }
